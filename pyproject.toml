@@ -8,11 +8,15 @@ dependencies = [
     "mcp[cli]>=1.2.0",
     "pykx>=4.0.0.b4",
     "pydantic-settings",
+    "backtesting-engine",
     # Optional: Manage below packages for embedding support
     # "sentence_transformers",
     # "openai",
     # "tiktoken",
 ]
+
+[tool.uv.sources]
+backtesting-engine = { path = "../backtesting-engine", editable = true }
 
 [dependency-groups]
 dev = [
